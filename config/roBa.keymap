@@ -39,8 +39,8 @@
             key-positions = <12 13>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
+        esc {
+            bindings = <&kp ESC>;
             key-positions = <11 10>;
         };
 
