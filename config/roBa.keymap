@@ -50,7 +50,7 @@
         };
 
         eq {
-            bindings = <&kp EQUAL>;
+            bindings = <&kp LC(Z)>;
             key-positions = <24 25>;
         };
     };
