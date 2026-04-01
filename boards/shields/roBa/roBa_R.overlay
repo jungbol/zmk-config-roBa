@@ -20,6 +20,15 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
     };
+
+/* 🔥 여기 추가 */
+    input_processors {
+        accel: accel {
+            compatible = "zmk,input-processor-acceleration";
+            acceleration-exponent = <15>;
+            acceleration-coefficient = <12>;
+        };
+    };
 };
 
 &pinctrl {
@@ -57,5 +66,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+
+        input-processors = <&accel>;  // 🔥 여기만 추가
     };
 };
