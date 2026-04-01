@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/input_transform.h> // ← 이 줄을 추가하세요
 
 &mt {
     flavor = "balanced";
