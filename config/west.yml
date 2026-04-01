@@ -4,6 +4,7 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: kumamuk-git
       url-base: https://github.com/kumamuk-git
+    # urob 원격지 설정은 삭제해도 됩니다.
 
   projects:
     - name: zmk
@@ -13,7 +14,7 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: kumamuk-git
       revision: main
-    # 수정된 부분: url을 직접 입력하고 remote 설정을 뺍니다.
+    # 아래와 같이 'url' 전체를 직접 적어주세요.
     - name: zmk-input-behavior-listener
       url: https://github.com/urob/zmk-input-behavior-listener
       revision: main
