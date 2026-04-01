@@ -27,6 +27,9 @@
     input_processors {
         accel: accel {
             compatible = "zmk,input-processor-acceleration";
+            /* ✅ 이 줄 추가 (핵심) */
+            #input-processor-cells = <0>;
+
             acceleration-exponent = <15>;
             acceleration-coefficient = <12>;
         };
