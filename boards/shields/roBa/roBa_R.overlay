@@ -15,21 +15,12 @@
 };
 
 / {
-    /* 가속도 프로세서 정의 */
-    input_processor_code_acceleration: input_processor_code_acceleration {
-        compatible = "zmk,input-processor-code-acceleration";
-        #input-processor-cells = <2>;
-    };
-
-    /* 트랙볼 리스너 설정 */
     trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-        /* 가속도 프로세서 연결 (에러가 나면 이 줄만 지우면 됩니다) */
-        input-processors = <&input_processor_code_acceleration 15 2>;
     };
-}; // <-- 여기서 루트 블록을 정확히 닫아야 합니다.
+};
 
 &pinctrl {
     spi0_default: spi0_default {
