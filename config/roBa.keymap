@@ -19,6 +19,7 @@
     //         <&kp LEFT_ARROW>,
     //         <&kp UP_ARROW>,
     //         <&kp DOWN_ARROW>;
+
     //     tick = <10>;
     //     wait-ms = <5>;
     //     tap-ms = <5>;
@@ -39,8 +40,8 @@
             key-positions = <12 13>;
         };
 
-        esc {
-            bindings = <&kp ESC>;
+        muhennkann {
+            bindings = <&to_layer_0 INT_MUHENKAN>;
             key-positions = <11 10>;
         };
 
@@ -50,7 +51,7 @@
         };
 
         eq {
-            bindings = <&kp LC(Z)>;
+            bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
     };
