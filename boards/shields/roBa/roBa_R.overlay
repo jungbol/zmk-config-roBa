@@ -19,6 +19,19 @@ trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
+/* 가속도 노드 정의 */
+    input_processor_code_acceleration: input_processor_code_acceleration {
+        compatible = "zmk,input-processor-code-acceleration";
+        #input-processor-cells = <2>;
+    };
+
+    trackball_listener {
+        status = "okay";
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+        /* 여기에 가속도 프로세서를 연결 */
+        input-processors = <&input_processor_code_acceleration 15 2>;
     };
 };
 
