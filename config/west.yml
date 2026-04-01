@@ -4,8 +4,6 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: kumamuk-git
       url-base: https://github.com/kumamuk-git
-    # urob 원격지 설정은 삭제해도 됩니다.
-
   projects:
     - name: zmk
       remote: zmkfirmware
@@ -14,10 +12,5 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: kumamuk-git
       revision: main
-    # 아래처럼 'url' 항목을 직접 사용하고, 주소 뒤에 '.git'을 붙여보세요.
-    - name: zmk-input-behavior-listener
-      url: https://github.com/urob/zmk-input-behavior-listener.git
-      revision: main
-
   self:
     path: config
