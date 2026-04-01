@@ -13,5 +13,5 @@ properties:
     type: int
     required: true
 
-# 🔥 이거 없으면 지금처럼 터짐
-input-processor-cells: 0
+# 🔥 반드시 이렇게
+input-processor-cells: []
