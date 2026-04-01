@@ -14,16 +14,26 @@
         ;
 };
 
-/* --- 트랙볼 리스너 설정 --- */
+/* --- [여기서부터 가속도 설정입니다] --- */
 / {
     trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
+        /* zip_temp_scaler라는 이름으로 가속도 엔진을 불러옵니다 */
+        input-processors = <&zip_xy_scaler 2 1>;
+    };
+
+    /* 가속도 엔진 정의: 에러 방지를 위해 표준 규격으로 작성 */
+    zip_xy_scaler: zip_xy_scaler {
+        compatible = "zmk,input-processor-scaler";
+        #input-processor-cells = <2>;
+        type = <INPUT_EV_REL>;
     };
 };
+/* --- [가속도 설정 끝] --- */
 
-/* --- 핀 및 SPI 설정 --- */
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
@@ -59,9 +69,5 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        /* 가속도 대신 감도(CPI)를 직접 여기서 설정합니다. */
-        /* 기본값이 보통 낮은데, 1000 정도로 올리면 훨씬 쾌적합니다. */
-        res-x = <1000>;
-        res-y = <1000>;
     };
 };
