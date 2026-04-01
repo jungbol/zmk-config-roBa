@@ -5,34 +5,22 @@
 };
 
 &kscan0 {
-    col-gpios
-        = <&xiao_d 10 GPIO_ACTIVE_HIGH>
-        , <&xiao_d 9 GPIO_ACTIVE_HIGH>
-        , <&xiao_d 8 GPIO_ACTIVE_HIGH>
-        , <&xiao_d 7 GPIO_ACTIVE_HIGH>
-        , <&gpio0 10 GPIO_ACTIVE_HIGH>
-        ;
+        col-gpios
+            = <&xiao_d 10 GPIO_ACTIVE_HIGH>
+            , <&xiao_d 9 GPIO_ACTIVE_HIGH>
+            , <&xiao_d 8 GPIO_ACTIVE_HIGH>
+            , <&xiao_d 7 GPIO_ACTIVE_HIGH>
+            , <&gpio0 10 GPIO_ACTIVE_HIGH>
+            ;
 };
 
-/* --- [여기서부터 가속도 설정입니다] --- */
 / {
     trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
-
-        /* zip_temp_scaler라는 이름으로 가속도 엔진을 불러옵니다 */
-        input-processors = <&zip_xy_scaler 2 1>;
-    };
-
-    /* 가속도 엔진 정의: 에러 방지를 위해 표준 규격으로 작성 */
-    zip_xy_scaler: zip_xy_scaler {
-        compatible = "zmk,input-processor-scaler";
-        #input-processor-cells = <2>;
-        type = <INPUT_EV_REL>;
     };
 };
-/* --- [가속도 설정 끝] --- */
 
 &pinctrl {
     spi0_default: spi0_default {
