@@ -15,10 +15,13 @@
 };
 
 / {
-    trackball_listener {
+trackball_listener {
         status = "okay";
         compatible = "zmk,input-listener";
         device = <&trackball>;
+        
+        /* 가속도 적용을 위해 아래 줄 추가 */
+        input-processors = <&input_processor_code_acceleration 15 2>;
     };
 };
 
