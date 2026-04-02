@@ -44,8 +44,8 @@
             key-positions = <0 1>;
         };
 
-        PG_dn {
-            bindings = <&kp PAGE_DOWN>;
+        Back {
+            bindings = <&kp LA(LEFT)>;
             key-positions = <32 33>;
         };
 
@@ -56,6 +56,16 @@
 
         PG_up {
             bindings = <&kp PAGE_UP>;
+            key-positions = <8 9>;
+        };
+
+        C_w {
+            bindings = <&kp LC(W)>;
+            key-positions = <32 31>;
+        };
+
+        PG_dn {
+            bindings = <&kp PAGE_DOWN>;
             key-positions = <20 21>;
         };
     };
