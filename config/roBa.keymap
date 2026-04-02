@@ -39,17 +39,17 @@
             key-positions = <12 13>;
         };
 
-        muhennkann {
+        esc {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
         };
 
-        double_quotation {
+        PG_dn {
             bindings = <&kp PAGE_DOWN>;
             key-positions = <32 33>;
         };
 
-        eq {
+        C_z {
             bindings = <&kp LC(Z)>;
             key-positions = <23 22>;
         };
