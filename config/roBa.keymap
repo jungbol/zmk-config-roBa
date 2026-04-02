@@ -45,13 +45,13 @@
         };
 
         double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
+            bindings = <&kp PAGE_DOWN>;
             key-positions = <20 21>;
         };
 
         eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+            bindings = <&kp LC(Z)>;
+            key-positions = <23 22>;
         };
     };
 
