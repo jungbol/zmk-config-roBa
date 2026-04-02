@@ -84,6 +84,15 @@
             quick-tap-ms = <130>;
             flavor = "tap-preferred";
         };
+
+        td_chrome_newtab: td_chrome_newtab {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_CHROME_NEWTAB";
+            #binding-cells = <0>;
+            bindings = <&kp LC(T)>, <&kp LC(LS(T))>;
+
+            tapping-term-ms = <350>;
+        };
     };
 
     keymap {
@@ -93,7 +102,7 @@
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                   &kp T                                                        &kp Y        &kp U  &kp I      &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F                   &kp G        &kp LS(LG(S))                    &kp MINUS      &kp H        &kp J  &kp K      &lt 5 L  &kp SQT
-&hm LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &kp COLON                        &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&hm LEFT_SHIFT Z  &kp X         &kp C         &kp V                   &kp B        &kp COLON                        &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &hm RIGHT_SHIFT SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 LANG2  &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_1      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
