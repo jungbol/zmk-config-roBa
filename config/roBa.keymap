@@ -53,6 +53,11 @@
             bindings = <&kp LC(Z)>;
             key-positions = <23 22>;
         };
+
+        PG_up {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <20 21>;
+        };
     };
 
     macros {
