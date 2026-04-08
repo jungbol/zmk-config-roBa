@@ -63,6 +63,11 @@
             bindings = <&kp LS(Z)>;
             key-positions = <22 35>;
         };
+
+        Shift_Ctrl_z {
+            bindings = <&kp LS(LC(Z))>;
+            key-positions = <22 35 34>;
+        };
     };
 
     macros {
