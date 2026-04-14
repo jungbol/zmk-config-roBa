@@ -125,10 +125,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W                    &kp E                  &kp R                   &kp T                                                        &kp Y        &kp U  &kp I      &kp O      &kp P
-&kp A             &kp S                    &kp D                  &kp F                   &kp G        &kp LS(LG(S))                    &kp MINUS      &kp H        &kp J  &kp K      &kp L      &kp SQT
-&hm LEFT_SHIFT Z  &kp X                    &kp C                  &kp V                   &kp B        &lt 6 BACKSPACE                  &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &lt 5 DOT  &hm RIGHT_SHIFT SLASH
-&hm LCTRL GRAVE   &hm LEFT_SHIFT LEFT_GUI  &hm LEFT_ALT CAPSLOCK  &lt_to_layer_0 7 ENTER  &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_1      &kp BACKSPACE  &lt 1 ENTER                               &kp DEL
+&kp Q             &kp W                    &kp E         &kp R                   &kp T                                                        &kp Y        &kp U  &kp I      &kp O      &kp P
+&kp A             &kp S                    &kp D         &kp F                   &kp G        &kp LS(LG(S))                    &kp MINUS      &kp H        &kp J  &kp K      &kp L      &kp SQT
+&mt LEFT_SHIFT Z  &kp X                    &kp C         &kp V                   &kp B        &lt 6 BACKSPACE                  &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &lt 5 DOT  &hm RIGHT_SHIFT SLASH
+&mt LCTRL GRAVE   &hm LEFT_SHIFT LEFT_GUI  &kp LEFT_ALT  &lt_to_layer_0 7 ENTER  &lt 2 SPACE  &lt_to_layer_0 3 LANGUAGE_1      &kp BACKSPACE  &lt 1 ENTER                               &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -192,10 +192,10 @@
 
         layer_7 {
             bindings = <
-&kp Y   &kp U   &kp I      &kp O    &kp P                                &trans  &trans  &trans  &trans  &trans
-&kp H   &kp J   &kp K      &kp L    &kp SQT   &trans             &trans  &trans  &trans  &trans  &trans  &trans
-&kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSPACE      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans   &trans    &trans             &trans  &trans                          &trans
+&kp Y             &kp U   &kp I         &kp O    &kp P                                &trans  &trans  &trans  &trans  &trans
+&kp H             &kp J   &kp K         &kp L    &kp SQT   &trans             &trans  &trans  &trans  &trans  &trans  &trans
+&hm LEFT_SHIFT N  &kp M   &kp COMMA     &kp DOT  &kp FSLH  &kp BACKSPACE      &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL         &trans  &kp LEFT_ALT  &trans   &trans    &trans             &trans  &trans                          &trans
             >;
         };
     };
