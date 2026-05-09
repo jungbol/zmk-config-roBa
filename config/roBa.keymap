@@ -36,7 +36,7 @@
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <12 11>;
+            key-positions = <12 13>;
         };
 
         esc {
@@ -67,6 +67,11 @@
         Shift_Ctrl_z {
             bindings = <&kp LS(LC(Z))>;
             key-positions = <22 35 34>;
+        };
+
+        Ctrl_H {
+            bindings = <&kp LC(H)>;
+            key-positions = <24 23>;
         };
     };
 
