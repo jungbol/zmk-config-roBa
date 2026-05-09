@@ -67,11 +67,13 @@
         Shift_Ctrl_z {
             bindings = <&kp LS(LC(Z))>;
             key-positions = <22 35 34>;
+            slow-release;
         };
 
         Ctrl_H {
             bindings = <&kp LC(H)>;
             key-positions = <24 23>;
+            slow-release;
         };
     };
 
