@@ -74,6 +74,7 @@
             bindings = <&kp LC(H)>;
             key-positions = <24 23>;
             slow-release;
+            timeout-ms = <200>;
         };
     };
 
