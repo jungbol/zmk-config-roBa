@@ -72,7 +72,7 @@
 
         Ctrl_H {
             bindings = <&kp LC(H)>;
-            key-positions = <11 12>;
+            key-positions = <23 24>;
             slow-release;
             timeout-ms = <200>;
         };
