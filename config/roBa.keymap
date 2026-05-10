@@ -113,8 +113,6 @@
             label = "TD_CHROME_NEWTAB";
             #binding-cells = <0>;
             bindings = <&kp PERIOD>, <&kp COMMA>;
-
-            tapping-term-ms = <350>;
         };
 
         shm: Short_homerow_mods {
